@@ -494,14 +494,32 @@ def show_add_feedback():
             try:
                 df = pd.read_csv(uploaded_file)
                 
-                # Validate required columns
+                # Clean column names (strip whitespace and convert to lowercase for comparison)
+                df.columns = df.columns.str.strip()
+                
+                # Validate required columns (case-insensitive)
                 required_cols = ['feedback_id', 'text', 'source', 'date']
-                missing_cols = [col for col in required_cols if col not in df.columns]
+                df_cols_lower = [col.lower() for col in df.columns]
+                missing_cols = []
+                
+                for req_col in required_cols:
+                    if req_col.lower() not in df_cols_lower:
+                        missing_cols.append(req_col)
                 
                 if missing_cols:
                     st.error(f"❌ Missing required columns: {', '.join(missing_cols)}")
                     st.info(f"Your CSV has columns: {', '.join(df.columns.tolist())}")
+                    st.warning("💡 Make sure your CSV has proper column headers separated by commas")
                 else:
+                    # Rename columns to match expected format (case-insensitive)
+                    column_mapping = {}
+                    for col in df.columns:
+                        col_lower = col.lower()
+                        if col_lower in required_cols:
+                            column_mapping[col] = col_lower
+                    
+                    df = df.rename(columns=column_mapping)
+                    
                     st.write("Preview:")
                     st.dataframe(df.head(), use_container_width=True)
                     
@@ -544,6 +562,7 @@ def show_add_feedback():
                 st.error("❌ The CSV file is empty")
             except pd.errors.ParserError as e:
                 st.error(f"❌ Error parsing CSV: {str(e)}")
+                st.info("💡 Make sure your CSV is properly formatted with commas separating columns")
             except Exception as e:
                 st.error(f"❌ Error reading CSV: {str(e)}")
 
