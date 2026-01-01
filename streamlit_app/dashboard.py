@@ -494,20 +494,58 @@ def show_add_feedback():
             try:
                 df = pd.read_csv(uploaded_file)
                 
-                st.write("Preview:")
-                st.dataframe(df.head(), use_container_width=True)
+                # Validate required columns
+                required_cols = ['feedback_id', 'text', 'source', 'date']
+                missing_cols = [col for col in required_cols if col not in df.columns]
                 
-                if st.button("📤 Upload Feedback", use_container_width=True):
-                    with st.spinner("Uploading feedback..."):
-                        success, result = upload_csv_feedback(df)
-                        
-                        if success:
-                            st.success(f"✅ {result.get('message', 'Upload successful!')}")
-                        else:
-                            st.error(f"❌ {result.get('message', 'Upload failed')}")
+                if missing_cols:
+                    st.error(f"❌ Missing required columns: {', '.join(missing_cols)}")
+                    st.info(f"Your CSV has columns: {', '.join(df.columns.tolist())}")
+                else:
+                    st.write("Preview:")
+                    st.dataframe(df.head(), use_container_width=True)
+                    
+                    if st.button("📤 Upload Feedback", use_container_width=True):
+                        with st.spinner("Uploading feedback..."):
+                            # Convert DataFrame to list of dicts with proper formatting
+                            feedbacks = []
+                            for _, row in df.iterrows():
+                                feedback = {
+                                    "feedback_id": str(row['feedback_id']),
+                                    "text": str(row['text']),
+                                    "source": str(row['source']),
+                                    "date": str(row['date'])
+                                }
+                                feedbacks.append(feedback)
+                            
+                            try:
+                                response = requests.post(
+                                    f"{API_BASE_URL}/feedback/bulk",
+                                    json={"feedbacks": feedbacks},
+                                    timeout=30
+                                )
+                                
+                                if response.status_code == 200:
+                                    result = response.json()
+                                    st.success(f"✅ {result.get('message', 'Upload successful!')}")
+                                    st.balloons()
+                                else:
+                                    error_detail = response.json().get('detail', 'Unknown error')
+                                    st.error(f"❌ Upload failed: {error_detail}")
+                                    st.error(f"Status code: {response.status_code}")
+                            except requests.exceptions.Timeout:
+                                st.error("❌ Upload timed out. The file might be too large or the server is slow.")
+                            except requests.exceptions.ConnectionError:
+                                st.error("❌ Cannot connect to API. Make sure the backend is running.")
+                            except Exception as e:
+                                st.error(f"❌ Upload failed: {str(e)}")
             
+            except pd.errors.EmptyDataError:
+                st.error("❌ The CSV file is empty")
+            except pd.errors.ParserError as e:
+                st.error(f"❌ Error parsing CSV: {str(e)}")
             except Exception as e:
-                st.error(f"Error reading CSV: {e}")
+                st.error(f"❌ Error reading CSV: {str(e)}")
 
 def show_live_analyzer():
     """Live text analysis tool"""
