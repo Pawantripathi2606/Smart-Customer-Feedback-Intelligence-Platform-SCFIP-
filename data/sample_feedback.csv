@@ -1,0 +1,101 @@
+feedback_id,text,source,date
+F001,The app crashes every time I try to login. Very frustrating!,Mobile App,2025-12-28
+F002,Love the new dark mode feature. Great update!,Web,2025-12-28
+F003,Payment processing is extremely slow. Takes 5+ minutes.,Mobile App,2025-12-29
+F004,Customer support was very helpful and responsive.,Support,2025-12-29
+F005,The interface is confusing. Hard to find basic features.,Web,2025-12-29
+F006,App freezes when uploading images. Please fix this bug.,Mobile App,2025-12-30
+F007,Pricing is too high compared to competitors.,Support,2025-12-30
+F008,Would love to see a calendar integration feature.,Web,2025-12-30
+F009,The app is amazing! Best productivity tool I've used.,Mobile App,2025-12-31
+F010,Login page doesn't load on Safari browser.,Web,2025-12-31
+F011,Notifications are not working properly on iOS.,Mobile App,2025-12-31
+F012,Great product but needs better documentation.,Support,2025-12-31
+F013,App crashes when switching between tabs.,Mobile App,2026-01-01
+F014,The search functionality is very fast and accurate.,Web,2026-01-01
+F015,Please add export to PDF feature.,Support,2026-01-01
+F016,Battery drain is excessive when app is running.,Mobile App,2026-01-01
+F017,Love the clean and modern UI design!,Web,2026-01-01
+F018,Sync between devices is broken. Data doesn't update.,Mobile App,2026-01-01
+F019,The free tier is too limited. Need more features.,Support,2026-01-01
+F020,App performance has improved significantly after update.,Mobile App,2026-01-01
+F021,Cannot delete my account. This is a serious privacy issue.,Web,2026-01-01
+F022,The onboarding tutorial was very helpful.,Mobile App,2025-12-28
+F023,App keeps logging me out randomly.,Mobile App,2025-12-28
+F024,Would appreciate dark mode for the web version too.,Web,2025-12-29
+F025,The premium subscription is worth every penny!,Support,2025-12-29
+F026,Error messages are not clear or helpful.,Mobile App,2025-12-30
+F027,Loading times are unacceptably slow.,Web,2025-12-30
+F028,Please add two-factor authentication for security.,Support,2025-12-30
+F029,The app is intuitive and easy to use.,Mobile App,2025-12-31
+F030,Offline mode doesn't work as advertised.,Mobile App,2025-12-31
+F031,Customer service response time is too slow.,Support,2025-12-31
+F032,Love the new widget feature on iOS!,Mobile App,2026-01-01
+F033,The app uses too much storage space.,Mobile App,2026-01-01
+F034,Please add support for multiple languages.,Web,2026-01-01
+F035,Excellent app with great features!,Mobile App,2026-01-01
+F036,The recent update broke several key features.,Mobile App,2025-12-28
+F037,Would like to see integration with Google Calendar.,Support,2025-12-28
+F038,App is very buggy and unstable.,Mobile App,2025-12-29
+F039,The design is beautiful and user-friendly.,Web,2025-12-29
+F040,Cannot recover my password. Reset link doesn't work.,Web,2025-12-30
+F041,The app has transformed my workflow. Highly recommend!,Mobile App,2025-12-30
+F042,Too many ads in the free version.,Mobile App,2025-12-31
+F043,The collaboration features work flawlessly.,Web,2025-12-31
+F044,App crashes when trying to upload large files.,Mobile App,2026-01-01
+F045,Need better filtering and sorting options.,Support,2026-01-01
+F046,The mobile app is much better than the web version.,Mobile App,2026-01-01
+F047,Subscription auto-renewal without warning is unethical.,Support,2025-12-28
+F048,The app is fast and responsive. Great job!,Mobile App,2025-12-28
+F049,Please fix the notification spam issue.,Mobile App,2025-12-29
+F050,The analytics dashboard is very insightful.,Web,2025-12-29
+F051,App doesn't work on older Android versions.,Mobile App,2025-12-30
+F052,The team collaboration feature is a game changer!,Web,2025-12-30
+F053,Too expensive for what it offers.,Support,2025-12-31
+F054,The app keeps crashing on startup.,Mobile App,2025-12-31
+F055,Love the customization options available!,Web,2026-01-01
+F056,Data export feature is broken.,Mobile App,2026-01-01
+F057,The app is perfect for my needs. No complaints!,Mobile App,2026-01-01
+F058,Please add a desktop application version.,Support,2025-12-28
+F059,The UI is cluttered and overwhelming.,Web,2025-12-28
+F060,App performance on iPad is excellent.,Mobile App,2025-12-29
+F061,The pricing model is confusing.,Support,2025-12-29
+F062,Would love to see more templates available.,Web,2025-12-30
+F063,The app is slow and laggy on my device.,Mobile App,2025-12-30
+F064,Customer support resolved my issue quickly!,Support,2025-12-31
+F065,The app has too many unnecessary features.,Mobile App,2025-12-31
+F066,Great value for money. Highly satisfied!,Web,2026-01-01
+F067,The search function doesn't work properly.,Mobile App,2026-01-01
+F068,Please add keyboard shortcuts for power users.,Support,2026-01-01
+F069,The app is reliable and stable.,Mobile App,2025-12-28
+F070,Cannot sync data across devices.,Mobile App,2025-12-28
+F071,The new update improved performance significantly.,Web,2025-12-29
+F072,The app is too complicated for beginners.,Mobile App,2025-12-29
+F073,Love the reminder feature!,Mobile App,2025-12-30
+F074,The app freezes frequently on my phone.,Mobile App,2025-12-30
+F075,Would like to see more payment options.,Support,2025-12-31
+F076,The app is fantastic! Best in its category.,Mobile App,2025-12-31
+F077,The interface needs a complete redesign.,Web,2026-01-01
+F078,App drains battery even in background.,Mobile App,2026-01-01
+F079,The premium features are worth upgrading for.,Support,2026-01-01
+F080,The app is simple and does what it promises.,Mobile App,2025-12-28
+F081,Cannot access my data after the update.,Mobile App,2025-12-28
+F082,The color scheme is pleasant and easy on the eyes.,Web,2025-12-29
+F083,The app crashes when I try to share content.,Mobile App,2025-12-29
+F084,Please add offline support for all features.,Support,2025-12-30
+F085,The app is well-designed and functional.,Mobile App,2025-12-30
+F086,The subscription is too expensive for students.,Support,2025-12-31
+F087,Love the recent performance improvements!,Web,2025-12-31
+F088,The app doesn't remember my preferences.,Mobile App,2026-01-01
+F089,Would appreciate better error handling.,Support,2026-01-01
+F090,The app is smooth and bug-free!,Mobile App,2026-01-01
+F091,The loading screen takes forever.,Web,2025-12-28
+F092,Great app with excellent customer support!,Mobile App,2025-12-28
+F093,The app is missing basic features.,Mobile App,2025-12-29
+F094,The widgets are very useful and customizable.,Mobile App,2025-12-29
+F095,Cannot cancel my subscription easily.,Support,2025-12-30
+F096,The app is perfect for my daily tasks!,Mobile App,2025-12-30
+F097,The app crashes during video calls.,Mobile App,2025-12-31
+F098,Would love to see more integrations with other apps.,Support,2025-12-31
+F099,The app is reliable and never lets me down.,Mobile App,2026-01-01
+F100,The recent update made the app worse.,Mobile App,2026-01-01
