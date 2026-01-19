@@ -1,0 +1,51 @@
+feedback_id,text,source,date
+F001,Payment failed twice and money was deducted,Mobile App,12/1/2025
+F002,Money debited but transaction shows failed,Mobile App,12/1/2025
+F003,I was charged twice for a single order,Web,12/2/2025
+F004,Refund is taking too long to process,Support,12/2/2025
+F005,App crashes whenever I try to make payment,Mobile App,12/3/2025
+F006,The app is very slow after the latest update,Mobile App,12/3/2025
+F007,Please add dark mode feature,Mobile App,12/4/2025
+F008,Customer support is not responding,Support,12/4/2025
+F009,Amazing app very user friendly,Web,12/5/2025
+F010,Everything works as expected,Web,12/5/2025
+F011,The app is very slow after the latest update,Mobile App,12/3/2025
+F012,App freezes on login screen,Mobile App,12/3/2025
+F013,Performance has degraded significantly,Web,12/4/2025
+F014,Loading time is too high,Web,12/4/2025
+F015,App crashes while uploading images,Mobile App,12/4/2025
+F016,Search feature takes too long to respond,Web,12/4/2025
+F017,Frequent lag while scrolling,Mobile App,12/5/2025
+F018,Application becomes unresponsive randomly,Mobile App,12/5/2025
+F019,Website hangs during checkout,Web,12/5/2025
+F020,Performance issues on low-end devices,Mobile App,12/5/2025
+F021,Please add dark mode feature,Mobile App,12/6/2025
+F022,Need option to download reports in PDF,Web,12/6/2025
+F023,Add biometric login support,Mobile App,12/6/2025
+F024,Please introduce monthly subscription plan,Web,12/6/2025
+F025,Feature to edit profile picture is missing,Mobile App,12/7/2025
+F026,Need multi-language support,Web,12/7/2025
+F027,Please add notification mute option,Mobile App,12/7/2025
+F028,Add export to Excel functionality,Web,12/7/2025
+F029,Would love a wishlist feature,Mobile App,12/8/2025
+F030,Please add two-factor authentication,Web,12/8/2025
+F031,Customer support is not responding,Support,12/8/2025
+F032,No response from support team for three days,Support,12/8/2025
+F033,Support executive was rude,Support,12/9/2025
+F034,Issue not resolved even after multiple emails,Support,12/9/2025
+F035,Support chat disconnects automatically,Support,12/9/2025
+F036,Very poor customer service experience,Support,12/9/2025
+F037,Support ticket closed without resolution,Support,12/10/2025
+F038,No proper guidance from support team,Support,12/11/2025
+F039,Delayed response from helpdesk,Support,12/12/2025
+F040,Support staff lacks technical knowledge,Support,12/13/2025
+F041,Amazing app very user friendly,Mobile App,12/14/2025
+F042,Great experience smooth performance,Web,12/15/2025
+F043,Very satisfied with the service,Mobile App,12/16/2025
+F044,Excellent UI and easy navigation,Web,12/17/2025
+F045,Customer support resolved my issue quickly,Support,12/18/2025
+F046,Refund was processed within one day,Mobile App,12/19/2025
+F047,App works perfectly now,Mobile App,12/20/2025
+F048,Overall very good experience,Web,12/21/2025
+F049,Loved the latest update,Mobile App,12/22/2025
+F050,Everything works as expected,Web,12/23/2025
